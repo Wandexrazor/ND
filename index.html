@@ -28,7 +28,30 @@
     p {
       opacity: 0.7;
     }
+    .bd-form {
+  margin-top: 24px;
+}
+
+.bd-form input[type="email"] {
+  background: transparent;
+  border: 1px solid white;
+  padding: 10px 14px;
+  color: white;
+  width: 240px;
+  outline: none;
+}
+
+.bd-form button {
+  margin-left: 8px;
+  padding: 10px 14px;
+  background: white;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+
   </style>
+  
 
 
 </head>
@@ -37,6 +60,20 @@
     <img src="logo.svg" alt="NETIZEN DEMENTIA logo" width="300" class="logo">
 
     <p>First Drop - 2026.</p>
+    <form
+  action="https://buttondown.com/api/emails/embed-subscribe/velour"
+  method="post"
+  class="embeddable-buttondown-form"
+>
+  <label for="bd-email">Enter your email</label>
+  <input type="email" name="email" id="bd-email" />
+  <input type="submit" value="Subscribe" />
+  <p>
+    <a href="https://buttondown.com/refer/velour" target="_blank">
+      Powered by Buttondown.
+    </a>
+  </p>
+</form>
   </div>
 </body>
 </html>
